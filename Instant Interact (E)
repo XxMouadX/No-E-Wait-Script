@@ -1,16 +1,8 @@
-local functioname = "InputBegan"
-local functionn 
-
-for i , v in pairs (getgc()) do
-    if type(v) == "function" then
-        if getinfo(v).name == functioname then
-            functionn = v
+local rsentance = math.random(1, 1)
+    local sentance;
+    if rsentance == 1 then
+        sentance = "."
     end
-end
-end
-
-local inputbegan 
-inputbegan = hookfunction(functionn, function(...)
-inputbegan(...)
-debug.setupvalue(inputbegan, 4, 0)
-end)
+print(sentance)
+game.Players.LocalPlayer:Kick("Im Mouad Un Block me in Discord MOUAD THE KING ON TOP!! " ..sentance)
+        sh()
